@@ -1,0 +1,15 @@
+<p>ngclass works!</p>
+<!-- 第一种 对象写法 -->
+<p [ngClass]="{orange: classflag, bgblue: classflag}">{{ title }}</p>
+<!-- 第二种 多个联合 对象 写法 -->
+<p [ngClass]="{'orange bgblue': !classflag}">{{ title }}</p>
+<button (click)="classflag = !classflag">修改</button>
+<hr>
+<!-- 第三种 数组写法 -->
+<p [ngClass]="['orange', 'bgblue', !classflag ? 'fz60': '' ]">{{ title }}</p>
+<hr>
+<p>ngstyle works!</p>
+<!-- 第一种写法 -->
+<p [ngStyle]="{color:!classflag ? '#f80': '#0f8', fontSize: '60px'}">{{ title }}</p>
+<!-- 第二种写法 -->
+<p [ngStyle]="ngStyleObj">{{ title }}</p>

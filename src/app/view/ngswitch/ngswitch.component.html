@@ -1,0 +1,10 @@
+<p>ngswitch works!</p>
+<button (click)="value = '1'">小米</button>
+<button (click)="value = '2'">华为</button>
+<button (click)="value = '3'">世界</button>
+
+<div [ngSwitch]="value">
+  <div *ngSwitchCase="'1'">小米好喝</div>
+  <div *ngSwitchCase="'2'">华为好吃</div>
+  <div *ngSwitchDefault>世界美好</div>
+</div>

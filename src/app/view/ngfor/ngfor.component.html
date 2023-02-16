@@ -1,0 +1,18 @@
+<p>ngfor works!</p>
+<!-- <ul>
+  <li *ngFor="let item of ngforData; index as id">{{id + 1}} /{{item}}</li>
+</ul>
+<hr>
+<ul>
+  <li *ngFor="let item of list; index as id; trackBy: trackByItems">{{id + 1}} /{{item.name}}</li>
+</ul> -->
+<!-- 
+<ul>
+  <li *ngFor="let item of numbers2; trackBy: trackByNames"> {{item.name}}</li>
+</ul> -->
+
+<ul>
+  <li *ngFor="let item of numbers2; index as id;">{{item.name}}</li>
+</ul>
+<button [ngStyle]="{position: 'fixed', bottom: '20px', right: '20px'}" (click)="add()">添加</button>
+
