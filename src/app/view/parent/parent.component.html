@@ -1,0 +1,18 @@
+<p>parent works!</p>
+<!-- <input [value]="currentItem.name" (click)="currentItem.name=getValue($event)" />
+<p>{{currentItem.name}}</p>
+<button (click)="print($event)">点我</button>
+<hr>
+<button [disabled]="disabled" (click)="setDisabled()" (click)="print($event)">点我绑定多个事件</button>
+<button (click)="print($event)" (click)="setDisabled()">点我解开禁用</button>
+
+<div [attr.data-state]="disabled" (click)="sayDiv($event)">
+我是思考盒子
+</div> -->
+
+<hr>
+<!-- <input type="text" [(ngModel)]="parentValue" [style]="{width: '300px'}"> -->
+<!-- <app-child [parentAliasValue]="parentAliasValue" [value]="parentValue" (setValue)="getSonValue($event)"></app-child> -->
+
+<h2>主组件</h2>
+<app-child [(master)]="parentMVVM"></app-child>

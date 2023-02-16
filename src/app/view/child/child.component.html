@@ -1,0 +1,18 @@
+<p>child works!</p>
+<div>
+  <!-- <p>{{parentAliasValue}}</p> -->
+  <!-- <mark>{{childValue}}</mark> -->
+  <hr>
+  <!-- <p>子组件修改父组件的props</p> -->
+  <!-- <input type="text" [(ngModel)]="childValue"> -->
+  <!-- <p [style]="{color: '#8f0'}">{{childValue}}</p> -->
+  
+  <!-- 子组件传递父组件值 -->
+  <!-- <input type="text" (input)="sendValue($event)">
+  <p [style]="{color: '#8f0'}">{{childValue}}</p> -->
+  
+
+  <!-- 自定义组件双向绑定 -->
+  <input type="text" (input)="onInput($event)">
+  <p [style]="{color: '#8f0'}">{{master}}</p> 
+</div>
