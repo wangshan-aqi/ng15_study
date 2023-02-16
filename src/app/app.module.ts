@@ -4,11 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { CenterDirective } from './directive/center.directive';
+import { CenterComponent } from './view/center/center.component';
 
 @NgModule({
   // 声明组件 管道符 指令
   declarations: [
     AppComponent,
+    CenterDirective,
+    CenterComponent,
   ],
   // 模块 针对全局的
   imports: [
