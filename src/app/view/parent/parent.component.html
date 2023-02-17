@@ -1,0 +1,4 @@
+<p>parent works!</p>
+<!-- 生命周期 -->
+<button (click)="setIndex()">点我</button>
+<app-child [index]="index" *ngIf="index < 5"></app-child>

@@ -3,24 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgswitchComponent } from './view/ngswitch/ngswitch.component';
-import { NgifComponent } from './view/ngif/ngif.component';
-import { NgbindComponent } from './view/ngbind/ngbind.component';
-import { NgclassComponent } from './view/ngclass/ngclass.component';
-import { NgmodelComponent } from './view/ngmodel/ngmodel.component';
 import { FormsModule } from '@angular/forms';
-import { NgforComponent } from './view/ngfor/ngfor.component';
+import { ParentComponent } from './view/parent/parent.component';
+import { ChildComponent } from './view/child/child.component';
+import { AComponent } from './slot/a/a.component';
+import { BComponent } from './slot/b/b.component';
+import { CComponent } from './slot/c/c.component';
+import { NgcontainerComponent } from './view/ngcontainer/ngcontainer.component';
 
 @NgModule({
   // 声明组件 管道符 指令
   declarations: [
     AppComponent,
-    NgswitchComponent,
-    NgifComponent,
-    NgbindComponent,
-    NgclassComponent,
-    NgmodelComponent,
-    NgforComponent
+    ParentComponent,
+    ChildComponent,
+    AComponent,
+    BComponent,
+    CComponent,
+    NgcontainerComponent,
   ],
   // 模块 针对全局的
   imports: [
