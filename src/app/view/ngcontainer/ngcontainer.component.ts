@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./ngcontainer.component.scss']
 })
 export class NgcontainerComponent {
-  // constructor() {
     list: any[] = [
       {
         id: 1,
@@ -27,5 +26,4 @@ export class NgcontainerComponent {
         price: 100
       },
     ]
-  // }
 }
