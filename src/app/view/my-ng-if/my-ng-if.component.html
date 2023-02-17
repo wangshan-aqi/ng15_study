@@ -1,0 +1,11 @@
+<p>my-ng-if works!</p>
+<h1>结构自定义指令</h1>
+<button (click)="flag=!flag">点我切换</button>
+
+<div [style]="{color: '#8ff'}" >
+  <span *appMyNgIf="flag">我也是相当于ng-template组件</span>
+  <ng-template [appMyNgIf]="!flag">
+    <div [style]="{color: '#8f8'}" >我是template直接写的</div>
+  </ng-template>
+</div>
+

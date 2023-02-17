@@ -1,0 +1,12 @@
+<p>pipereverse works!</p>
+{{ price | number:"2.2-2" }}
+<!-- 2两位 .2最小两位 -2 最大两位 -->
+{{ content }}
+{{ datanow | date:"YYYY-MM-dd hh:mm:ss" }}
+{{ message | uppercase }}
+<hr>
+{{ content | pipereverse }}
+{{ message | pipereverse }}
+<hr>
+{{ content | pipereverse:"前端":"后端":"运营" }}
+
